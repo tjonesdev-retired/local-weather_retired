@@ -1,0 +1,157 @@
+body {
+  font-family: "josefin sans", sans-serif;
+  font-weight: 600;
+  background-color: black;
+  background-image: url(https://images.pexels.com/photos/360912/pexels-photo-360912.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  z-index: 100;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 390px;
+  width: 79%;
+  height: 51px;
+  padding: 5px 0;
+  color: rgba(255,255,255,0.9);
+  background-color: rgba(0,0,0, 0.7);
+}
+
+span {
+  white-space: nowrap;
+  padding: 0 5px;
+  font-size: 30px;
+  text-align: center;
+}
+#location {
+  margin: 130px auto 0 auto;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#currentTemp {
+  z-index: 90;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  width: 80%;
+  margin: -57px auto;
+  padding: 65px 0;
+  height: 280px;
+  background-color: rgba(255,255,255,0.6);
+}
+
+#icon {
+  padding: 20px 5%;
+  width: auto;
+  height: 100%;
+  font-size: 75px;
+  float: left;
+  text-align: right;
+}
+
+#tempNum {
+  width: auto;
+  height: 100%;
+  font-size: 100px;
+  float: left;
+  text-align: center;
+}
+
+#tempUnits {
+  padding: 33px 5%;
+  width: auto;
+  height: 100%;
+  float: left;
+  font-size: 28px;
+}
+
+button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: grey;
+  text-align: center;
+  width: 35px;
+  height: 40px;
+}
+
+button.selected {
+  color: mediumseagreen;
+}
+
+button:active,
+button:focus {
+  outline: none !important;
+}
+
+#description {
+  margin: 0 auto;
+}
+
+#footer {
+  font-family: "Quicksand", sans-serif;
+  width: 400px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 3px;
+  padding-left: 13px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.9);
+  background-color: rgba(0,0,0,0.6);
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#wuImg {
+  margin: 0 10px;
+  width: 90px;
+  padding-bottom: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    min-width: 330px;
+    width: 79%;
+  }
+  span {
+    font-size: 20px;
+  }
+  #currentTemp {
+    min-width: 340px;
+    width: 80%;
+  }
+  #tempNum {
+    font-size: 80px;
+    height: 80%;
+  }
+  #icon {
+    font-size: 55px;
+    height: 80%;
+    padding-right: 20px;
+  }
+  #tempUnits {
+    font-size: 20px;
+    height: 55%;
+    padding: 0 8px;
+  }
+  #footer {
+    width: 340px;
+    letter-spacing: .5px;
+    font-size: 10px;
+  }
+}
